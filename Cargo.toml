@@ -1,0 +1,7 @@
+[workspace]
+members = ["client", "server"]
+default-members = ["client", "server"]
+
+#[patch."https://github.com/oxidecomputer/typify"]
+#typify = { path = "../typify/typify" }
+

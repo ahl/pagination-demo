@@ -1,0 +1,19 @@
+[package]
+name = "pagination-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1"
+anyhow = "1"
+percent-encoding = "2.1"
+progenitor-client = { path = "../../progenitor/progenitor-client" }
+reqwest = { version = "0.11", features = ["json", "stream"] }
+tokio = { version = "1", features = ["full"] }
+futures = "0.3.18"
+
+[build-dependencies]
+progenitor = { path = "../../progenitor/progenitor" }
+serde_json = "1"

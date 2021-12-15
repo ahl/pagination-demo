@@ -1,0 +1,10 @@
+[package]
+name = "pagination-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dropshot = { path = "../../dropshot/dropshot" } 
+schemars = "0.8"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
